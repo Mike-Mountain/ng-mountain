@@ -1,0 +1,26 @@
+<div class="file-input-group">
+  <input
+    class="d-none"
+    #fileInput
+    type="file"
+    [multiple]="multiple"
+    (change)="addFile($event)"
+  />
+  <button role="button" class="button mb-2" (click)="fileInput.click()" [disabled]="!multiple && fileUrls.length > 0">
+    Browse
+  </button>
+  <div class="files">
+    <ng-container *ngFor="let url of fileUrls; index as i">
+      <div class="file">
+        <img [src]="url.file" alt="" width="250">
+        <div class="w-100 flex-between py-2">
+          <small class="file-name">{{url.name}}</small>
+          <button class="delete-file" (click)="removeFile(url.name)">
+            x
+          </button>
+        </div>
+        <div class="file-item-overlay"></div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -35,4 +35,8 @@ export class AppComponent implements OnInit {
       this.loadingService.setIsLoading(false);
     }, 5000);
   }
+
+  log(event: any) {
+    console.log(event)
+  }
 }

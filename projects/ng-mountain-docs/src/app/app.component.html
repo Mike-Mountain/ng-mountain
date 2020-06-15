@@ -1,17 +1,22 @@
-<button (click)="open(content)" #origin>Test Modal</button>
-<button (click)="load()">Test loading</button>
+<!--<button (click)="open(content, origin)" #origin>Test Modal</button>-->
+<!--<button (click)="load()">Test loading</button>-->
+<ngm-file-upload
+  [multiple]="true"
+  (files)="log($event)"
+></ngm-file-upload>
 
-<ng-template #content>
-  This is a test
-</ng-template>
+<!--<ng-template #content>-->
+<!--  This is a test-->
+<!--</ng-template>-->
 
-<ngm-spinner>
-  <p>
-    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
-    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
-    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
-    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
-    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
-    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
-  </p>
-</ngm-spinner>
+<!--<ngm-spinner>-->
+<!--  <p>-->
+<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
+<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
+<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
+<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
+<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
+<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
+<!--  </p>-->
+<!--</ngm-spinner>-->
+
