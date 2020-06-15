@@ -6,7 +6,7 @@
     [multiple]="multiple"
     (change)="addFile($event)"
   />
-  <button role="button" class="button mb-2" (click)="fileInput.click()" [disabled]="!multiple && fileUrls.length > 0">
+  <button role="button" class="button button-outline-accent mb-2" (click)="fileInput.click()" [disabled]="!multiple && fileUrls.length > 0">
     Browse
   </button>
   <div class="files">

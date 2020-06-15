@@ -22,6 +22,6 @@ export class DialogConfig extends OverlayConfig {
 
   constructor(params: Partial<DialogConfig>) {
     super(params);
-    this.dialogClass = params?.dialogClass ?? 'dialog-box';
+    this.dialogClass = params?.dialogClass ?? '';
   }
 }

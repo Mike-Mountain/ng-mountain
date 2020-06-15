@@ -1,22 +1,28 @@
-<!--<button (click)="open(content, origin)" #origin>Test Modal</button>-->
-<!--<button (click)="load()">Test loading</button>-->
-<ngm-file-upload
-  [multiple]="true"
-  (files)="log($event)"
-></ngm-file-upload>
+<div class="card w-45 mx-auto mt-4">
+  <button class="button button-outline-accent mx-2" (click)="open(content)">Test Modal</button>
+  <button class="button button-outline-accent mx-2" (click)="open(content, origin)" #origin>Test Popover</button>
+  <button class="button button-outline-danger mx-2" (click)="load()">Test loading</button>
+  <div class="card-body">
+    <h3 class="mb-3">File Upload</h3>
 
-<!--<ng-template #content>-->
-<!--  This is a test-->
-<!--</ng-template>-->
+    <ngm-file-upload
+      [multiple]="true"
+      (files)="log($event)"
+    ></ngm-file-upload>
 
-<!--<ngm-spinner>-->
-<!--  <p>-->
-<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
-<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
-<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
-<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
-<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
-<!--    Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet-->
-<!--  </p>-->
-<!--</ngm-spinner>-->
+    <p>
+      Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste
+      amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores
+      ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum
+      delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem
+      Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
+      Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
+    </p>
+  </div>
+</div>
+
+<ngm-spinner></ngm-spinner>
+<ng-template #content>
+  This is a test
+</ng-template>
 

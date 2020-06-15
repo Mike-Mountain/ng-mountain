@@ -1,0 +1,78 @@
+@import "../mixins/buttons";
+
+// __________ Base Style  __________//
+.button {
+  border: 1px solid transparent;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  width: max-content;
+  background: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  transition: background .2s;
+}
+
+// __________ Solid-buttons  __________//
+.button-primary {
+  @include button-color(var(--primary));
+}
+
+.button-accent {
+  @include button-color(var(--accent));
+}
+
+.button-info {
+  @include button-color(var(--info));
+}
+
+.button-success {
+  @include button-color(var(--success));
+}
+
+.button-warning {
+  @include button-color(var(--warning));
+}
+
+.button-danger {
+  @include button-color(var(--danger));
+}
+
+.button-light {
+  @include button-color(var(--light));
+}
+
+.button-dark {
+  @include button-color(var(--dark));
+}
+
+// __________ Outline-buttons  __________//
+.button-outline-primary {
+  @include button-outline-color(var(--primary));
+}
+
+.button-outline-accent {
+  @include button-outline-color(var(--accent));
+}
+
+.button-outline-info {
+  @include button-outline-color(var(--info));
+}
+
+.button-outline-success {
+  @include button-outline-color(var(--success));
+}
+
+.button-outline-warning {
+  @include button-outline-color(var(--warning));
+}
+
+.button-outline-danger {
+  @include button-outline-color(var(--danger));
+}
+
+.button-outline-light {
+  @include button-outline-color(var(--light));
+}
+
+.button-outline-dark {
+  @include button-outline-color(var(--dark));
+}
