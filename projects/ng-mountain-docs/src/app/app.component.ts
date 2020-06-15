@@ -1,4 +1,4 @@
-import {Component, TemplateRef} from '@angular/core';
+import {Component, OnInit, TemplateRef} from '@angular/core';
 import {DialogService} from "ng-mountain";
 
 @Component({
@@ -6,13 +6,17 @@ import {DialogService} from "ng-mountain";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'ng-mountain-docs';
 
   constructor(private dialogService: DialogService) {
   }
 
-  open(content: TemplateRef<any>, origin?: HTMLElement) {
+  ngOnInit(): void {
+
+  }
+
+  public open(content: TemplateRef<any>, origin?: HTMLElement): void {
     let data = {};
     if (origin) {
       data = {content, origin};

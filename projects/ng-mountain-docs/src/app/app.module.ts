@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {DialogModule} from "ng-mountain";
+import {DialogModule, LoadingModule} from "ng-mountain";
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import {DialogModule} from "ng-mountain";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DialogModule
+    DialogModule,
+    LoadingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

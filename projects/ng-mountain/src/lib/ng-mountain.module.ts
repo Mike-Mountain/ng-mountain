@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {NgMountainComponent} from './components/ng-mountain.component';
 import {DialogModule} from "./modules/dialog/dialog.module";
+import {LoadingModule} from "./modules/loading/loading.module";
 
 
 @NgModule({
@@ -8,11 +9,13 @@ import {DialogModule} from "./modules/dialog/dialog.module";
     NgMountainComponent
   ],
   imports: [
-    DialogModule
+    DialogModule,
+    LoadingModule
   ],
   exports: [
     NgMountainComponent,
-    DialogModule
+    DialogModule,
+    LoadingModule
   ]
 })
 export class NgMountainModule {
