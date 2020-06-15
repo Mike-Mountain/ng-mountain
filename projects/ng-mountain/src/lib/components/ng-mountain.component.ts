@@ -1,13 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'ngm-ng-mountain',
-  template: `
-    <p>
-      ng-mountain works!
-    </p>
-  `,
-  styles: []
+  styleUrls: ['./ng-mountain.component.scss'],
+  template: ``,
+  encapsulation: ViewEncapsulation.None
 })
 export class NgMountainComponent implements OnInit {
 

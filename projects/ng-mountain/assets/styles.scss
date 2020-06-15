@@ -1,0 +1,11 @@
+@import '../../../node_modules/@angular/cdk/overlay-prebuilt.css';
+
+.dialog-backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dialog-box {
+  padding: .75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  background: white;
+}
