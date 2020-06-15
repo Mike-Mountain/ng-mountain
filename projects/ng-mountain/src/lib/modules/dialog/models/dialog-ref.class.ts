@@ -1,5 +1,5 @@
 import {Subject} from "rxjs";
-import {DialogCloseEvent, DialogContent} from "./dialog.model";
+import {DialogCloseEvent, DialogConfig, DialogContent} from "./dialog.model";
 import {OverlayRef} from "@angular/cdk/overlay";
 
 export class DialogRef<T = any> {
@@ -10,7 +10,8 @@ export class DialogRef<T = any> {
 
   constructor(public overlay: OverlayRef,
               public content: DialogContent,
-              public data: T) {
+              public data: T,
+              public config: DialogConfig) {
     overlay.backdropClick().subscribe(() => this._close('backdropClick', data));
   }
 

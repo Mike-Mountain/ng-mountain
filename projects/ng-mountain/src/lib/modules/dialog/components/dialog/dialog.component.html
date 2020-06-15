@@ -1,4 +1,4 @@
-<div [ngClass]="dialogRef.isPositioned ? 'popover-box' : 'dialog-box'">
+<div [class]="dialogRef?.config?.dialogClass">
   <ng-container *ngIf="renderMethod === 'text'">
     <div [innerHTML]="content"></div>
   </ng-container>

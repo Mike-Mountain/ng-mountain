@@ -8,6 +8,8 @@ export * from './lib/ng-mountain.module';
 
 // __________ Dialog Module __________ //
 export * from './lib/modules/dialog/dialog.module';
+export * from './lib/modules/dialog/models/dialog.model';
+export * from './lib/modules/dialog/models/dialog-ref.class';
 export * from './lib/modules/dialog/services/dialog.service';
 
 // __________ Loading Module __________ //

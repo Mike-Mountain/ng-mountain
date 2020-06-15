@@ -1,8 +1,8 @@
-<ng-container *ngIf="!isLoading; else spin">
+<ng-container *ngIf="!isLoading">
   <ng-content></ng-content>
 </ng-container>
 
-<ng-template #spin>
+<ng-template #content>
   <div class="spinner-box">
     <div class="loader">
       <div class="face">
