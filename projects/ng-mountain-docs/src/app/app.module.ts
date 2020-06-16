@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {DialogModule, FileUploadModule, LoadingModule} from "ng-mountain";
+import {CoreModule} from "./modules/core/core.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {DialogModule, FileUploadModule, LoadingModule} from "ng-mountain";
     AppRoutingModule,
     DialogModule,
     LoadingModule,
-    FileUploadModule
+    FileUploadModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

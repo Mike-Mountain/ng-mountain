@@ -3,3 +3,7 @@
 @import "mixins/all";
 @import "utils/all";
 @import "variables/all";
+
+.cdk-overlay-pane {
+  min-width: 25%;
+}

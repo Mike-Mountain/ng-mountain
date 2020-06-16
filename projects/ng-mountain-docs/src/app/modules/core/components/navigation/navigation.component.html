@@ -1,0 +1,40 @@
+<div class="navbar">
+  <div class="logo w-50">
+    <h2 class="flex-start h-100">NgMountain</h2>
+  </div>
+  <nav class="navigation w-50">
+    <a class="nav-item">
+      Home
+    </a>
+    <a class="nav-item" (click)="openDropdown(docsDropdown, origin)" #origin>
+      Documentation
+    </a>
+    <a class="nav-item">
+      About
+    </a>
+    <a class="nav-item">
+      Github
+    </a>
+  </nav>
+</div>
+
+<ng-template #docsDropdown>
+  <a class="dialog-item" (click)="closeDropdown()">
+    Spinner
+  </a>
+  <a class="dialog-item" (click)="closeDropdown()" routerLink="/documentation/dialog">
+    Dialog
+  </a>
+  <a class="dialog-item" (click)="closeDropdown()" routerLink="/documentation/file-upload">
+    File Upload
+  </a>
+  <a class="dialog-item" (click)="closeDropdown()">
+    Cards
+  </a>
+  <a class="dialog-item" (click)="closeDropdown()">
+    Buttons
+  </a>
+  <a class="dialog-item" (click)="closeDropdown()">
+    Colour Picker
+  </a>
+</ng-template>

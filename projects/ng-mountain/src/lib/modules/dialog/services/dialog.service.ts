@@ -49,6 +49,7 @@ export class DialogService {
   private getOverlayPosition(origin: HTMLElement): PositionStrategy {
     return this.overlay.position()
       .flexibleConnectedTo(origin)
+      .withFlexibleDimensions()
       .withPositions(this.getPositions())
       .withPush()
   }

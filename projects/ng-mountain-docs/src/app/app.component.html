@@ -1,28 +1,2 @@
-<div class="card w-45 mx-auto mt-4">
-  <button class="button button-outline-accent mx-2" (click)="open(content)">Test Modal</button>
-  <button class="button button-outline-accent mx-2" (click)="open(content, origin)" #origin>Test Popover</button>
-  <button class="button button-outline-danger mx-2" (click)="load()">Test loading</button>
-  <div class="card-body">
-    <h3 class="mb-3">File Upload</h3>
-
-    <ngm-file-upload
-      [multiple]="true"
-      (files)="log($event)"
-    ></ngm-file-upload>
-
-    <p>
-      Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste
-      amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores
-      ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum
-      delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem
-      Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
-      Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet Lorem Ipsum delores ste amet
-    </p>
-  </div>
-</div>
-
-<ngm-spinner></ngm-spinner>
-<ng-template #content>
-  This is a test
-</ng-template>
+<app-layout></app-layout>
 
