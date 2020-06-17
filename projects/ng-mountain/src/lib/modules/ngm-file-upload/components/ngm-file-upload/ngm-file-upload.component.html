@@ -1,4 +1,4 @@
-<div class="file-input-group">
+<div class="ngm-file-input-group">
   <input
     class="d-none"
     #fileInput
@@ -6,20 +6,20 @@
     [multiple]="multiple"
     (change)="addFile($event)"
   />
-  <button role="button" class="button button-outline-accent mb-2" (click)="fileInput.click()" [disabled]="!multiple && fileUrls.length > 0">
+  <button role="button" class="ngm-button ngm-button-outline-accent mb-2" (click)="fileInput.click()" [disabled]="!multiple && fileUrls.length > 0">
     Browse
   </button>
-  <div class="files">
+  <div class="ngm-files">
     <ng-container *ngFor="let url of fileUrls; index as i">
-      <div class="file">
+      <div class="ngm-file">
         <img [src]="url.file" alt="" width="250">
         <div class="w-100 flex-between py-2">
-          <small class="file-name">{{url.name}}</small>
-          <button class="delete-file" (click)="removeFile(url.name)">
+          <small class="ngm-file-name">{{url.name}}</small>
+          <button class="ngm-delete-file" (click)="removeFile(url.name)">
             x
           </button>
         </div>
-        <div class="file-item-overlay"></div>
+        <div class="ngm-file-item-overlay"></div>
       </div>
     </ng-container>
   </div>

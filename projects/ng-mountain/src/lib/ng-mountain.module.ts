@@ -3,6 +3,7 @@ import {NgMountainComponent} from './components/ng-mountain.component';
 import {NgmDialogModule} from "./modules/ngm-dialog/ngm-dialog.module";
 import {NgmLoadingModule} from "./modules/ngm-loading/ngm-loading.module";
 import {NgmFileUploadModule} from "./modules/ngm-file-upload/ngm-file-upload.module";
+import {NgmListModule} from "./modules/ngm-list/ngm-list.module";
 
 
 @NgModule({
@@ -12,13 +13,15 @@ import {NgmFileUploadModule} from "./modules/ngm-file-upload/ngm-file-upload.mod
   imports: [
     NgmDialogModule,
     NgmLoadingModule,
-    NgmFileUploadModule
+    NgmFileUploadModule,
+    NgmListModule
   ],
   exports: [
     NgMountainComponent,
     NgmDialogModule,
     NgmLoadingModule,
-    NgmFileUploadModule
+    NgmFileUploadModule,
+    NgmListModule
   ]
 })
 export class NgMountainModule {

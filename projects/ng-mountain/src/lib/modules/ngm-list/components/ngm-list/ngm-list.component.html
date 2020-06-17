@@ -1,0 +1,19 @@
+<section class="ngm-list">
+  <ng-container *ngIf="title">
+    <h3 class="text-center">{{title}}</h3>
+    <hr class="w-75 mx-auto">
+  </ng-container>
+  <ng-container *ngFor="let item of items">
+    <button
+      ngmListItem
+      class="ngm-list-item"
+      [tagPosition]="tagPosition"
+      [tagColor]="tagColor"
+      [hoverColor]="hoverColor"
+      [isActive]="selectedValue === item.value"
+      (click)="selectValue(item.value)"
+    >
+      {{item.label}}
+    </button>
+  </ng-container>
+</section>

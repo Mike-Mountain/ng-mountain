@@ -1,9 +1,9 @@
-.card {
+.ngm-card {
   box-shadow: 0 3px 6px rgba(var(--shadow-color), 0.2);
   padding: .75rem;
 }
 
-.card-header {
+.ngm-card-header {
   position: relative;
   padding: .5rem 0 1rem 0;
   &::after {
@@ -19,11 +19,11 @@
   }
 }
 
-.card-body {
+.ngm-card-body {
   padding: 1.5rem 1rem;
 }
 
-.card-footer {
+.ngm-card-footer {
   position: relative;
   padding: 1rem 0 .5rem 0;
   &::after {

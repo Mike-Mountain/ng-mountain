@@ -1,7 +1,7 @@
 @import "../mixins/buttons";
 
 // __________ Base Style  __________//
-.button {
+.ngm-btn {
   border: 1px solid transparent;
   padding: .5rem 1.5rem;
   cursor: pointer;
@@ -12,67 +12,67 @@
 }
 
 // __________ Solid-buttons  __________//
-.button-primary {
+.ngm-btn-primary {
   @include button-color(var(--primary));
 }
 
-.button-accent {
+.ngm-btn-accent {
   @include button-color(var(--accent));
 }
 
-.button-info {
+.ngm-btn-info {
   @include button-color(var(--info));
 }
 
-.button-success {
+.ngm-btn-success {
   @include button-color(var(--success));
 }
 
-.button-warning {
+.ngm-btn-warning {
   @include button-color(var(--warning));
 }
 
-.button-danger {
+.ngm-btn-danger {
   @include button-color(var(--danger));
 }
 
-.button-light {
+.ngm-btn-light {
   @include button-color(var(--light));
 }
 
-.button-dark {
+.ngm-btn-dark {
   @include button-color(var(--dark));
 }
 
 // __________ Outline-buttons  __________//
-.button-outline-primary {
+.ngm-btn-outline-primary {
   @include button-outline-color(var(--primary));
 }
 
-.button-outline-accent {
+.ngm-btn-outline-accent {
   @include button-outline-color(var(--accent));
 }
 
-.button-outline-info {
+.ngm-btn-outline-info {
   @include button-outline-color(var(--info));
 }
 
-.button-outline-success {
+.ngm-btn-outline-success {
   @include button-outline-color(var(--success));
 }
 
-.button-outline-warning {
+.ngm-btn-outline-warning {
   @include button-outline-color(var(--warning));
 }
 
-.button-outline-danger {
+.ngm-btn-outline-danger {
   @include button-outline-color(var(--danger));
 }
 
-.button-outline-light {
+.ngm-btn-outline-light {
   @include button-outline-color(var(--light));
 }
 
-.button-outline-dark {
+.ngm-btn-outline-dark {
   @include button-outline-color(var(--dark));
 }

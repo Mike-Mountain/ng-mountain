@@ -1,13 +1,21 @@
 body {
   // _____ Colours  _____//
   --primary: #007bff;
+  --primaryValues: 0, 123, 255;
   --accent: #f79000;
+  --accentValues: 247, 144, 0;
   --info: #17a2b8;
+  --infoValues: 23, 163, 184;
   --success: #28a745;
+  --successValues: 40, 167, 70;
   --warning: #ffc107;
+  --warningValues: 255, 193, 7;
   --danger: #dc3545;
+  --dangerValues: 220, 53, 70;
   --light: #f8f9fa;
+  --lightValues: 248, 249, 250;
   --dark: #343a40;
+  --darkValues: 52, 58, 64;
 
   // _____ RGB Values  _____//
   --shadow-color: 52, 58, 64;
