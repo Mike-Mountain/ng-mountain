@@ -1,6 +1,14 @@
 {
   "name": "ng-mountain",
-  "version": "0.0.0",
+  "version": "0.0.2",
+  "description": "A set of basic functional components",
+  "author": "Michael Mountain",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mike-Mountain/ng-mountain.git"
+  },
+  "bugs": "https://github.com/Mike-Mountain/ng-mountain/issues",
+  "homepage": "https://github.com/Mike-Mountain/ng-mountain",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

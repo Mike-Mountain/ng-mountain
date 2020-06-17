@@ -7,16 +7,16 @@ export * from './lib/components/ng-mountain.component';
 export * from './lib/ng-mountain.module';
 
 // __________ Dialog Module __________ //
-export * from './lib/modules/dialog/dialog.module';
-export * from './lib/modules/dialog/models/dialog.model';
-export * from './lib/modules/dialog/models/dialog-ref.class';
-export * from './lib/modules/dialog/services/dialog.service';
+export * from './lib/modules/ngm-dialog/ngm-dialog.module';
+export * from './lib/modules/ngm-dialog/models/ngm-dialog.model';
+export * from './lib/modules/ngm-dialog/models/ngm-dialog-ref.class';
+export * from './lib/modules/ngm-dialog/services/ngm-dialog.service';
 
 // __________ File Upload Module __________ //
-export * from './lib/modules/file-upload/file-upload.module';
-export * from './lib/modules/file-upload/components/file-upload/file-upload.component';
+export * from './lib/modules/ngm-file-upload/ngm-file-upload.module';
+export * from './lib/modules/ngm-file-upload/components/ngm-file-upload/ngm-file-upload.component';
 
 // __________ Loading Module __________ //
-export * from './lib/modules/loading/loading.module';
-export * from './lib/modules/loading/services/loading.service';
-export * from './lib/modules/loading/components/spinner/spinner.component';
+export * from './lib/modules/ngm-loading/ngm-loading.module';
+export * from './lib/modules/ngm-loading/services/ngm-loading.service';
+export * from './lib/modules/ngm-loading/components/ngm-spinner/ngm-spinner.component';

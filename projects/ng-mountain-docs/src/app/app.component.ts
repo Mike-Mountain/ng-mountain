@@ -1,5 +1,5 @@
 import {Component, OnInit, TemplateRef} from '@angular/core';
-import {DialogConfig, DialogService, LoadingService} from "ng-mountain";
+import {NgmDialogConfig, NgmDialogService, NgmLoadingService} from "ng-mountain";
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,8 @@ import {DialogConfig, DialogService, LoadingService} from "ng-mountain";
 export class AppComponent implements OnInit {
   title = 'ng-mountain-docs';
 
-  constructor(private dialogService: DialogService,
-              private loadingService: LoadingService) {
+  constructor(private dialogService: NgmDialogService,
+              private loadingService: NgmLoadingService) {
   }
 
   ngOnInit(): void {
@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
 
   public open(content: TemplateRef<any>, origin?: HTMLElement): void {
     let data = {};
-    const config: DialogConfig = {
+    const config: NgmDialogConfig = {
       dialogClass: 'dialog-box'
     }
     if (origin) {

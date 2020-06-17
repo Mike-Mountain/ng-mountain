@@ -1,5 +1,5 @@
 import {Component, OnInit, TemplateRef} from '@angular/core';
-import {DialogConfig, DialogRef, DialogService} from "ng-mountain";
+import {NgmDialogConfig, NgmDialogRef, NgmDialogService} from "ng-mountain";
 
 @Component({
   selector: 'app-navigation',
@@ -8,16 +8,16 @@ import {DialogConfig, DialogRef, DialogService} from "ng-mountain";
 })
 export class NavigationComponent implements OnInit {
 
-  dialogRef: DialogRef;
+  dialogRef: NgmDialogRef;
 
-  constructor(private dialogService: DialogService) {
+  constructor(private dialogService: NgmDialogService) {
   }
 
   ngOnInit(): void {
   }
 
   openDropdown(content: TemplateRef<any>, origin: HTMLElement) {
-    const config: DialogConfig = {
+    const config: NgmDialogConfig = {
       dialogClass: 'dialog-box'
     };
     this.dialogRef = this.dialogService.open({content, origin, config});
