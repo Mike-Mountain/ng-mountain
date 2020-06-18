@@ -11,9 +11,11 @@ export class NgmListComponent implements OnInit {
 
   @Input() title: string;
   @Input() items: NgmListItem[];
+  @Input() direction: 'horizontal' | 'vertical' = 'vertical';
   @Input() tagPosition: NgmItemDirection;
   @Input() tagColor: NgmColor;
   @Input() hoverColor: NgmColor;
+
   @Output() value = new EventEmitter<string>();
 
   public selectedValue: string;

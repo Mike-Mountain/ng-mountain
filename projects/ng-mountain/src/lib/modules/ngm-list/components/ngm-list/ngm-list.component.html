@@ -3,17 +3,20 @@
     <h3 class="text-center">{{title}}</h3>
     <hr class="w-75 mx-auto">
   </ng-container>
-  <ng-container *ngFor="let item of items">
-    <button
-      ngmListItem
-      class="ngm-list-item"
-      [tagPosition]="tagPosition"
-      [tagColor]="tagColor"
-      [hoverColor]="hoverColor"
-      [isActive]="selectedValue === item.value"
-      (click)="selectValue(item.value)"
-    >
-      {{item.label}}
-    </button>
-  </ng-container>
+  <div [ngClass]="direction === 'vertical' ? ['flex-center', 'flex-column', 'align-items-start'] : ['flex-center']">
+    <ng-container *ngFor="let item of items">
+      <button
+        ngmListItem
+        class="ngm-list-item"
+        [class.text-center]="direction === 'horizontal'"
+        [tagPosition]="tagPosition"
+        [tagColor]="tagColor"
+        [hoverColor]="hoverColor"
+        [isActive]="selectedValue === item.value"
+        (click)="selectValue(item.value)"
+      >
+        {{item.label}}
+      </button>
+    </ng-container>
+  </div>
 </section>
