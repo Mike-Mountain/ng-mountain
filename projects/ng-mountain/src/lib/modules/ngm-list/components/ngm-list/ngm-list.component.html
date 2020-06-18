@@ -3,9 +3,13 @@
     <h3 class="text-center">{{title}}</h3>
     <hr class="w-75 mx-auto">
   </ng-container>
-  <div [ngClass]="direction === 'vertical' ? ['flex-center', 'flex-column', 'align-items-start'] : ['flex-center']">
+  <div
+    class="h-100"
+    [ngClass]="direction === 'vertical' ? ['flex-center', 'flex-column', 'align-items-start'] : ['flex-center']"
+  >
     <ng-container *ngFor="let item of items">
       <button
+        *ngIf="!item.isHidden"
         ngmListItem
         class="ngm-list-item"
         [class.text-center]="direction === 'horizontal'"
