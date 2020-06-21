@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {NgmListItem} from "ng-mountain";
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -8,14 +7,8 @@ import {NgmListItem} from "ng-mountain";
 })
 export class LandingComponent implements OnInit {
 
-  testItems: NgmListItem[] = [
-    {label: 'Test Project', value: '1'},
-    {label: 'Test Project 2', value: '2'},
-    {label: 'Test Project 3', value: '3'},
-    {label: 'Test Project 4', value: '4'},
-  ];
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

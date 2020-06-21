@@ -21,9 +21,3 @@ export * from './lib/modules/ngm-file-upload/components/ngm-file-upload/ngm-file
 export * from './lib/modules/ngm-loading/ngm-loading.module';
 export * from './lib/modules/ngm-loading/services/ngm-loading.service';
 export * from './lib/modules/ngm-loading/components/ngm-spinner/ngm-spinner.component';
-
-// __________ List Module __________ //
-export * from './lib/modules/ngm-list/ngm-list.module';
-export * from './lib/modules/ngm-list/models/ngm-list.model';
-export * from './lib/modules/ngm-list/components/ngm-list/ngm-list.component';
-export * from './lib/modules/ngm-list/directives/ngm-list-item.directive';

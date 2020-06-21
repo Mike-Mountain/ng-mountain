@@ -21,8 +21,8 @@ body {
   --boxShadow:  0 2px 4px rgba(0, 0, 0, 0.8), 0 0 3px 1px rgba(0, 0, 0, 0.8);
 
   // _____ RGB Values  _____//
-  --shadow-color: 52, 58, 64;
-  --border-color: 52, 58, 64;
+  --shadowColorValues: 52, 58, 64;
+  --borderColorValues: 52, 58, 64;
 
   // _____ Derived Values  _____//
   --text: var(--light);

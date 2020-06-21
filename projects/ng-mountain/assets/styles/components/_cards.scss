@@ -1,5 +1,5 @@
 .ngm-card {
-  box-shadow: 0 3px 6px rgba(var(--shadow-color), 0.2);
+  box-shadow: 0 3px 6px rgba(var(--shadowColorValues), 0.2);
   padding: .75rem;
 }
 
@@ -15,7 +15,7 @@
     margin: 0 auto;
     width: 90%;
     height: 1px;
-    background-color: rgba(var(--border-color), 0.1);
+    background-color: rgba(var(--borderColorValues), 0.1);
   }
 }
 
@@ -35,6 +35,6 @@
     margin: 0 auto;
     width: 90%;
     height: 1px;
-    background-color: rgba(var(--border-color), 0.1);
+    background-color: rgba(var(--borderColorValues), 0.1);
   }
 }
