@@ -17,17 +17,17 @@ import {
 })
 export class ColorPaletteComponent implements OnChanges, OnInit, AfterViewInit {
 
-  @HostListener('window:mouseup', ['$event'])
-  mouseUp(event: MouseEvent) {
+  @HostListener('window:mouseup')
+  private mouseUp(): void {
     this.mouseIsDown = false;
   }
 
-  @ViewChild('canvas') canvas: ElementRef<HTMLCanvasElement>;
-  @Input() hue: string;
-  @Output() color = new EventEmitter<string>(true);
+  @ViewChild('canvas') private canvas: ElementRef<HTMLCanvasElement>;
+
+  @Input() public hue: string;
+  @Output() private color = new EventEmitter<string>(true);
 
   public selectedPosition: { x: number, y: number };
-
   private context: CanvasRenderingContext2D;
   private mouseIsDown: boolean;
 

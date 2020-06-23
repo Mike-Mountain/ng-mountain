@@ -7,6 +7,7 @@ import {DialogDocsComponent} from './components/dialog-docs/dialog-docs.componen
 import {FileUploadDocsComponent} from './components/file-upload-docs/file-upload-docs.component';
 import {ResizeDocsComponent} from './components/resize-docs/resize-docs.component';
 import {NgmColorPickerModule} from "../../../../../ng-mountain/src/lib/modules/ngm-color-picker/ngm-color-picker.module";
+import {NgmFileUploadModule} from "ng-mountain";
 
 
 @NgModule({
@@ -16,11 +17,12 @@ import {NgmColorPickerModule} from "../../../../../ng-mountain/src/lib/modules/n
     FileUploadDocsComponent,
     ResizeDocsComponent
   ],
-  imports: [
-    CommonModule,
-    DocumentationRoutingModule,
-    NgmColorPickerModule
-  ]
+    imports: [
+        CommonModule,
+        DocumentationRoutingModule,
+        NgmColorPickerModule,
+        NgmFileUploadModule
+    ]
 })
 export class DocumentationModule {
 }

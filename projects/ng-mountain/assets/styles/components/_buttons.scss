@@ -1,18 +1,32 @@
 @import "../mixins/buttons";
 
 // __________ Base Style  __________//
-.ngm-btn {
+.button {
   border: 1px solid transparent;
   padding: .5rem 1.5rem;
   cursor: pointer;
   width: max-content;
   background: transparent;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
   transition: background .2s;
+  &:focus {
+    outline: auto 2px rgba(77, 144, 254, 0.4);
+    outline-offset: 2px;
+  }
 }
 
-.ngm-btn-none {
-  @extend .ngm-btn;
+.button-round {
+  @extend .button;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-none {
+  @extend .button;
   box-shadow: none;
   &:hover {
     background-color: rgba(var(--darkValues), 0.1);
@@ -20,67 +34,67 @@
 }
 
 // __________ Solid-buttons  __________//
-.ngm-btn-primary {
+.button-primary {
   @include button-color(var(--primary));
 }
 
-.ngm-btn-accent {
+.button-accent {
   @include button-color(var(--accent));
 }
 
-.ngm-btn-info {
+.button-info {
   @include button-color(var(--info));
 }
 
-.ngm-btn-success {
+.button-success {
   @include button-color(var(--success));
 }
 
-.ngm-btn-warning {
+.button-warning {
   @include button-color(var(--warning));
 }
 
-.ngm-btn-danger {
+.button-danger {
   @include button-color(var(--danger));
 }
 
-.ngm-btn-light {
+.button-light {
   @include button-color(var(--light));
 }
 
-.ngm-btn-dark {
+.button-dark {
   @include button-color(var(--dark));
 }
 
 // __________ Outline-buttons  __________//
-.ngm-btn-outline-primary {
+.button-outline-primary {
   @include button-outline-color(var(--primary));
 }
 
-.ngm-btn-outline-accent {
+.button-outline-accent {
   @include button-outline-color(var(--accent));
 }
 
-.ngm-btn-outline-info {
+.button-outline-info {
   @include button-outline-color(var(--info));
 }
 
-.ngm-btn-outline-success {
+.button-outline-success {
   @include button-outline-color(var(--success));
 }
 
-.ngm-btn-outline-warning {
+.button-outline-warning {
   @include button-outline-color(var(--warning));
 }
 
-.ngm-btn-outline-danger {
+.button-outline-danger {
   @include button-outline-color(var(--danger));
 }
 
-.ngm-btn-outline-light {
+.button-outline-light {
   @include button-outline-color(var(--light));
 }
 
-.ngm-btn-outline-dark {
+.button-outline-dark {
   @include button-outline-color(var(--dark));
 }
