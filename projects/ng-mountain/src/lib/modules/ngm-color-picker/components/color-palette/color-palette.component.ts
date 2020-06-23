@@ -18,7 +18,7 @@ import {
 export class ColorPaletteComponent implements OnChanges, OnInit, AfterViewInit {
 
   @HostListener('window:mouseup')
-  private mouseUp(): void {
+  public mouseUp(): void {
     this.mouseIsDown = false;
   }
 

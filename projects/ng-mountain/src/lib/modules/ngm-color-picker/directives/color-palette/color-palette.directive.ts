@@ -16,7 +16,7 @@ import {
 export class ColorPaletteDirective implements OnInit, OnChanges {
 
   @HostListener('window:dragover', ['$event'])
-  onDragOver(event: DragEvent) {
+  public onDragOver(event: DragEvent) {
     event.preventDefault();
   }
 
