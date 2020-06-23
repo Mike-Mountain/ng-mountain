@@ -11,6 +11,14 @@
   transition: background .2s;
 }
 
+.ngm-btn-none {
+  @extend .ngm-btn;
+  box-shadow: none;
+  &:hover {
+    background-color: rgba(var(--darkValues), 0.1);
+  }
+}
+
 // __________ Solid-buttons  __________//
 .ngm-btn-primary {
   @include button-color(var(--primary));

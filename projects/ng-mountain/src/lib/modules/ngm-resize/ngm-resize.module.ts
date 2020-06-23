@@ -4,12 +4,15 @@ import {NgmResizeDirective} from './directives/ngm-resize.directive';
 
 
 @NgModule({
-  declarations: [
-    NgmResizeDirective
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        NgmResizeDirective
+    ],
+    exports: [
+        NgmResizeDirective
+    ],
+    imports: [
+        CommonModule
+    ]
 })
 export class NgmResizeModule {
 }

@@ -21,3 +21,7 @@ export * from './lib/modules/ngm-file-upload/components/ngm-file-upload/ngm-file
 export * from './lib/modules/ngm-loading/ngm-loading.module';
 export * from './lib/modules/ngm-loading/services/ngm-loading.service';
 export * from './lib/modules/ngm-loading/components/ngm-spinner/ngm-spinner.component';
+
+// __________ Color-Picker Module __________ //
+export * from './lib/modules/ngm-color-picker/ngm-color-picker.module';
+export * from './lib/modules/ngm-color-picker/components/ngm-color-picker/ngm-color-picker.component';

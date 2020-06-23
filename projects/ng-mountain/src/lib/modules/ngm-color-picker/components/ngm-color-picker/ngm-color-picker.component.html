@@ -1,0 +1,15 @@
+<div class="color-wrapper">
+  <div class="flex-center align-items-start">
+    <div [ngStyle]="{'background-color': color || 'white'}" class="color-block"></div>
+    <ngm-color-palette [hue]="hue" (color)="setColor($event)"></ngm-color-palette>
+  </div>
+  <div class="mt-2">
+    <ngm-color-slider (color)="setHue($event)"></ngm-color-slider>
+  </div>
+  <div class="input-wrapper" [ngStyle]="{'background-color': color}">
+    <p [ngStyle]="{'color': textColor}">{{color || 'rgba(255, 255, 255, 1)'}}</p>
+    <button class="ngm-btn-none mt-1" [ngStyle]="{'color': textColor}" (click)="applyColor()">
+      Apply
+    </button>
+  </div>
+</div>
