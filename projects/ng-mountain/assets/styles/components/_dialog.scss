@@ -8,7 +8,7 @@ ngm-dialog {
 
 .dialog-box {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
-  background: white;
+  background: var(--cardBg);
   width: 100%;
 }
 
@@ -19,6 +19,8 @@ ngm-dialog {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  color: var(--text);
+  background: transparent;
   &:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }

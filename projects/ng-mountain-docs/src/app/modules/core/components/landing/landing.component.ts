@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {NgmLoadingService} from "ng-mountain";
 
 @Component({
   selector: 'app-landing',
@@ -7,10 +8,16 @@ import {Component, OnInit} from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() {
+  constructor(private loadingService: NgmLoadingService) {
   }
 
   ngOnInit(): void {
   }
 
+  spin() {
+    this.loadingService.setIsLoading(true);
+    setTimeout(() => {
+      this.loadingService.setIsLoading(false);
+    }, 2000);
+  }
 }

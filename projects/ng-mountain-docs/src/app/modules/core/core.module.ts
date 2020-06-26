@@ -4,7 +4,7 @@ import {LayoutComponent} from './components/layout/layout.component';
 import {NavigationComponent} from './components/navigation/navigation.component';
 import { LandingComponent } from './components/landing/landing.component';
 import {RouterModule} from "@angular/router";
-import {NgmDialogModule} from "ng-mountain";
+import {NgmDialogModule, NgmLoadingModule} from "ng-mountain";
 
 
 @NgModule({
@@ -13,11 +13,12 @@ import {NgmDialogModule} from "ng-mountain";
     NavigationComponent,
     LandingComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    NgmDialogModule
-  ],
+    imports: [
+        CommonModule,
+        RouterModule,
+        NgmDialogModule,
+        NgmLoadingModule
+    ],
   exports: [
     LayoutComponent,
     NavigationComponent

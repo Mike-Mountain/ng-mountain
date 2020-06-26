@@ -20,7 +20,7 @@ export class NavigationComponent implements OnInit {
     const config: NgmDialogConfig = {
       dialogClass: 'dialog-box'
     };
-    this.dialogRef = this.dialogService.open({content, origin, config});
+    this.dialogRef = this.dialogService.open({content, origin, config, width: '30%'});
   }
 
   closeDropdown() {

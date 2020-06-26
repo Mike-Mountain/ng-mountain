@@ -1,6 +1,7 @@
 .card {
   box-shadow: 0 3px 6px rgba(var(--shadowColorValues), 0.2);
   padding: .75rem;
+  background: var(--cardBg);
 }
 
 .card-header {

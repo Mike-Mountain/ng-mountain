@@ -2,7 +2,9 @@
 @import "./dist/ng-mountain/assets/styles/styles";
 
 body {
-  --text: black !important;
+  --text: black;
+  --cardBg: white;
+  --pageBg: white;
 }
 
 html {
@@ -18,7 +20,7 @@ body {
 
 .nav-item {
   height: 100%;
-  width: 100%;
+  //width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
