@@ -16,6 +16,7 @@ export * from './lib/modules/ngm-dialog/services/ngm-dialog.service';
 // __________ File Upload Module __________ //
 export * from './lib/modules/ngm-file-upload/ngm-file-upload.module';
 export * from './lib/modules/ngm-file-upload/components/ngm-file-upload/ngm-file-upload.component';
+export * from './lib/modules/ngm-file-upload/models/ngm-file-upload.model';
 
 // __________ Loading Module __________ //
 export * from './lib/modules/ngm-loading/ngm-loading.module';
