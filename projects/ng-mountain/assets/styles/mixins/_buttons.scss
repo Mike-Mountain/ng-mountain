@@ -1,8 +1,8 @@
-@mixin button-outline-color($color) {
+@mixin button-outline-color($color, $colorValues) {
   border-color: $color;
   color: $color;
   &:hover {
-    background: $color;
+    background: rgba($colorValues, 0.6);
     color: var(--light);
   }
   &:active {

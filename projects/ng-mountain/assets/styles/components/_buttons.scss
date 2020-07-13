@@ -68,33 +68,41 @@
 
 // __________ Outline-buttons  __________//
 .button-outline-primary {
-  @include button-outline-color(var(--primary));
+  @include button-outline-color(var(--primary), var(--primaryValues));
 }
 
 .button-outline-accent {
-  @include button-outline-color(var(--accent));
+  @include button-outline-color(var(--accent), var(--accentValues));
 }
 
 .button-outline-info {
-  @include button-outline-color(var(--info));
+  @include button-outline-color(var(--info), var(--infoValues));
 }
 
 .button-outline-success {
-  @include button-outline-color(var(--success));
+  @include button-outline-color(var(--success), var(--successValues));
 }
 
 .button-outline-warning {
-  @include button-outline-color(var(--warning));
+  @include button-outline-color(var(--warning), var(--warningValues));
 }
 
 .button-outline-danger {
-  @include button-outline-color(var(--danger));
+  @include button-outline-color(var(--danger), var(--dangerValues));
 }
 
 .button-outline-light {
-  @include button-outline-color(var(--light));
+  @include button-outline-color(var(--light), var(--lightValues));
 }
 
 .button-outline-dark {
-  @include button-outline-color(var(--dark));
+  @include button-outline-color(var(--dark), var(--darkValues));
+}
+
+// __________Button-border  __________//
+.button-border {
+  border-color: var(--borderColor);
+   &:hover {
+     border-color: var(--borderColor);
+   }
 }
