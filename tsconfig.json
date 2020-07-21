@@ -19,6 +19,10 @@
       "ng-mountain": [
         "dist/ng-mountain/ng-mountain",
         "dist/ng-mountain"
+      ],
+      "ngm-http": [
+        "dist/ngm-http/ngm-http",
+        "dist/ngm-http"
       ]
     }
   },

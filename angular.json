@@ -164,6 +164,46 @@
           }
         }
       }
+    },
+    "ngm-http": {
+      "projectType": "library",
+      "root": "projects/ngm-http",
+      "sourceRoot": "projects/ngm-http/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngm-http/tsconfig.lib.json",
+            "project": "projects/ngm-http/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngm-http/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngm-http/src/test.ts",
+            "tsConfig": "projects/ngm-http/tsconfig.spec.json",
+            "karmaConfig": "projects/ngm-http/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngm-http/tsconfig.lib.json",
+              "projects/ngm-http/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ng-mountain"
 }
