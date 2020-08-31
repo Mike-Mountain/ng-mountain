@@ -1,0 +1,21 @@
+.ngm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ngm-tr {
+  height: 2rem;
+  border: 1px solid black;
+  &:hover {
+    .ngm-td {
+      background: var(--dark);
+      color: var(--light);
+      cursor: pointer;
+    }
+  }
+}
+
+.ngm-th, .ngm-td {
+  text-align: center;
+  border: 1px solid black;
+}

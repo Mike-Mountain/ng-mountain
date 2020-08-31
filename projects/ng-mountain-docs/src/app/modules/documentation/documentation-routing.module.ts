@@ -4,6 +4,7 @@ import {DocsContainerComponent} from "./components/docs-container/docs-container
 import {DialogDocsComponent} from "./components/dialog-docs/dialog-docs.component";
 import {FileUploadDocsComponent} from "./components/file-upload-docs/file-upload-docs.component";
 import {ResizeDocsComponent} from "./components/resize-docs/resize-docs.component";
+import {DataTableDocsComponent} from "./components/data-table-docs/data-table-docs.component";
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
     children: [
       {path: 'dialog', component: DialogDocsComponent},
       {path: 'resize', component: ResizeDocsComponent},
-      {path: 'file-upload', component: FileUploadDocsComponent}
+      {path: 'file-upload', component: FileUploadDocsComponent},
+      {path: 'data-table', component: DataTableDocsComponent}
     ]
   }
 ];

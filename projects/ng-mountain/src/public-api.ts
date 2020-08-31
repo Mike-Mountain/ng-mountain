@@ -26,3 +26,7 @@ export * from './lib/modules/ngm-loading/components/ngm-spinner/ngm-spinner.comp
 // __________ Color-Picker Module __________ //
 export * from './lib/modules/ngm-color-picker/ngm-color-picker.module';
 export * from './lib/modules/ngm-color-picker/components/ngm-color-picker/ngm-color-picker.component';
+
+// __________ Data-table Module __________ //
+export * from './lib/modules/ngm-data-table/ngm-data-table.module';
+export * from './lib/modules/ngm-data-table/components/ngm-data-table/ngm-data-table.component'

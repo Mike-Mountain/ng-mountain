@@ -1,0 +1,27 @@
+<ng-container *ngIf="config?.title">
+  <div class="w-100 flex-center">
+    <h2>{{config.title}}</h2>
+  </div>
+</ng-container>
+<table [class]="'ngm-table ' + config?.classes?.tableClass || ''">
+  <thead [class]="'ngm-thead ' + config?.classes?.theadClass || ''">
+    <tr [class]="'ngm-tr ' + config?.classes?.trClass || ''">
+      <ng-container *ngFor="let col of columns">
+        <th [class]="'ngm-th ' + config?.classes?.thClass || ''">
+          {{col.columnTitle}}
+        </th>
+      </ng-container>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let row of rows.data || ''">
+      <tr [class]="'ngm-tr ' + config?.classes?.trClass || ''">
+        <ng-container *ngFor="let col of columns">
+          <td [class]="'ngm-td ' + config?.classes?.tdClass || ''" (click)="emitItemClick(row)">
+            {{row[col.columnSlug]}}
+          </td>
+        </ng-container>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
